@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style_home.css">
+</head>
+<body>
+
+<main >
+
+    <section class="fundo">
+
+        <div id="bola">
+
+            <div class="bola" ></div>
+
+        </div>
+               
+        <h1 id="aviso" class="fala">Clique em "start" para iniciar</h1>
+
+        <section class="jogo">
+
+            <section id="question_html_1">
+                        
+                <h3>Quantas vezes Luwis hamilton foi campeão mundial? </h3>
+                            
+                <div id="options1">
+            
+                <p><input type="radio" name="questao01" value="errada">
+                <label>10 vezes</label></p>
+                
+                <p><input type="radio" name="questao01" value="errada">
+                <label>3 vezes</label></p>
+                
+                <p><input type="radio" name="questao01"  id="resposta01" value="certa">
+                <label>7 vezes</label></p>
+                
+                <p><input type="radio" name="questao01" value="errada">
+                <label>1 vez</label></p>
+                
+            </section>       
+                
+            <section id="question_html_2">
+                    
+                <h3>Quantas equipes atualmente fazem parte da formula 1?</h3>
+                
+                <div id="options2">
+                
+                    <p><input type="radio" name="questao02">
+                    <label>15 equipes</label></p>
+                
+                    <p><input type="radio" name="questao02" id="resposta02" value = "certa02">
+                    <label>10 equipes</label></p>
+                
+                    <p><input type="radio" name="questao02" >
+                    <label>5 equipes</label></p>
+                    
+                    <p><input type="radio" name="questao02">
+                    <label>20 equipes</label></p>
+                
+                </div>
+
+            </section>
+
+            <section id="question_html_3">
+                    
+                <h3>Quantos pilotos tem no corrrem em uma corrida de F1?</h3>
+                
+                <div id="options3">
+                
+                    <p><input type="radio" name="options" id="resposta03">
+                    <label for="options_031">20 pilotos</label></p>
+                
+                    <p><input type="radio" name="options">
+                    <label>10 pilotos</label></p>
+                
+                    <p><input type="radio" name="options" >
+                    <label>30 pilotos </label></p>
+                
+                    <p><input type="radio" name="options">
+                    <label >15 pilotos</label></p>
+                
+                </div>
+
+            </section>
+
+            <section id="question_html_4">
+                    
+                <h3>Quantos vezes Senna foi campeão mundial?</h3>
+                
+                <div id="options4">
+                
+                    <p><input type="radio" name="options" id="resposta04">
+                    <label for="options_031">3 vezes</label></p>
+                
+                    <p><input type="radio" name="options">
+                    <label>10 vezes</label></p>
+                
+                    <p><input type="radio" name="options" >
+                    <label>5 vezes </label></p>
+                
+                    <p><input type="radio" name="options">
+                    <label >1 vez</label></p>
+                
+                </div>
+
+            </section>
+
+            <section id="question_html_5">
+                    
+                <h3>Qual é a esquipe que mais vencer campeonatos?</h3>
+                
+                <div id="options5">
+                
+                    <p><input type="radio" name="options">
+                    <label for="options_031">Lotus</label></p>
+                
+                    <p><input type="radio" name="options">
+                    <label>Williams</label></p>
+                
+                    <p><input type="radio" name="options" >
+                    <label>MClaren</label></p>
+                
+                    <p><input type="radio" name="options"id="resposta05">
+                    <label >Ferrari</label></p>
+                
+                </div>
+
+            </section>
+
+            <section id="res">
+                <h3 id=msg></h3>
+                <p id="certos"></p>
+                <p id="erro"></p>
+                
+                    
+            </section>
+
+        </section>
+            
+        <div id="caixa_botao">
+              
+            <button id="back" class="botao" onclick="back()"><a href="home_page.html">Voltar</a></button>
+            <button id="start" class="botao" onclick="start()">Start</button>
+        
+        </div>
+    
+        </section>
+
+    
+</main>
+
+<script src="script_quiz.js"></script>
+
+</body>
+</html>
