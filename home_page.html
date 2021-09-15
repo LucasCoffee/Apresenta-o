@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style_home.css"> 
+    <title>Projeto</title>
+</head>
+
+<body>
+
+<main>
+<!-- tela de inicio-->
+
+<section id="home" class="fundo">
+        
+    <div class="bola"></div>
+
+    <div >
+       
+        <div class="hidden_button">
+
+          <p><button onclick="show()" id="button_start" class="botao">Iniciar</button></p>
+
+        </div>  
+
+        <div class="fala" id="fala_1" >
+            <p> Olá <br>
+            Meu nome é Lara, assitente de Lucas</p>
+        </div> 
+        
+        <div class="fala" id="fala_2" >
+
+            <p id="asking_name" >Como eu posso lhe chamar?</p>
+            <p><input type="text" maxlength="20" id="name" ></p>
+
+            <div class="caixa_botao" class="fala">
+
+                <button id="next" onclick="entrar()" class="botao" >ENTRAR</button>
+
+            </div>
+            
+        </div>
+    
+    </div>
+
+</section>
+
+<!--- Tela de menu -->
+<section id="menu" class="fundo">
+   
+    <header id="title"></header>
+
+    <div id="caixa_botao">
+        
+        <h2>O que quer fazer?</h2>
+   
+        <button class="botao" onclick="show_conhecer()">Conhecer o Lucas</button>
+
+        <button class="botao" onclick="show_profissional()"> Ver o perfil proficional de Lucas</button>
+    
+        <button class="botao" onclick="show_contados()">Meios de contado com lucas</button>
+
+        <button class="botao"><a href="corpo.html">Jogar</a></button>
+          
+    </div>
+
+</section>
+
+<script src="script_js.js"></script>
+
+<!--Tela de conhecer-->
+<section id="conhecer" class="fundo">
+        
+    <div id="bola">
+
+        <div class="bola"></div>
+
+    </div>
+
+        <div id="div_falas">
+
+            <div class="fala" id="fala1" ></p>Vou apresentar o lucas para você, </p><p id="nome"></p></div>
+
+            <div class="fala" id="fala2"><p>De inicio posso dizer que o Lucas foi meu criador e criou esse site.</p></div>
+
+            <div class="fala" id="fala3"><p>Ele é um estudante de 18 anos que cursa engenharia da computação</p></div>
+
+            <div class="fala" id="fala4"><p>Um estudante apaixonado pela mundo da tecnologia. Mas principalmente pela programação. </p></div>
+
+            <div class="fala" id="fala5">Lucas tem como qualidades a pontualidade,  a determinação e persistencia que por sinal foi uma das qualidades que ele mais usou para criar esse site. </div>
+
+           </div>
+
+    <button class="botao" onclick="button_voltar()">VOLTAR</button>
+
+</section>
+
+<section id="proficional" class="fundo">
+
+    <div id="bola">
+
+        <div class="bola"></div>
+
+    </div>
+
+    <div>
+
+        <div class="fala" id="fala6" >Perfil profissional do Lucas</div>
+
+            <div class="fala" id="fala7"><p>Lucas tem um perfil profissional de um desenvolvedor iniciante em front-end</p></div>
+
+            <div class="fala" id="fala8"><p>JavaScript, HTML5 e CSS3</p></div>
+
+            <div class="fala" id="fala9"><p>De voltas areas ele tem uma curriculo um pouco variado.</p></div>
+
+            <div class="fala" id="fala10">
+
+                <ul> 
+                    <li>Ensino Superior (Uniara Araraquara-SP) - Engenharia computacional</li>
+                    <br>
+                    <li>JavaScript - formação basica </li>
+                    <br>
+                    <li>HTML - formação Basica </li>
+                    <br>
+                    <li>Redes de computadores</li>
+                    <br>
+                    <li>Excel Avançado</li>
+                    <br>
+                    <li>Montagem e manutenção de computadores </li>
+                 </ul>
+
+        </div>
+
+    </div>
+
+    <button class="botao" onclick="back_pro()">VOLTAR</button>
+
+
+</section>
+
+<!--Meios de contados-->
+<section id="contados" class="fundo" >
+
+    <div id="bola">
+
+        <div class="bola"></div>
+
+    </div>
+
+    <div > 
+        <p class="fala" id="fala11">Aqui está os meio de contados que você pode falar com lucas</p>
+
+            <div id="meios">
+
+                <li><a href="http://api.whatsapp.com/send?phone=5516997010090" title="link para mandar mensagem no whatsapp de Lucas" target="blank" ><img src="../Whatsapp-icon.png" alt="Icone do Whatsapp" class="icon"></a></li>
+                <br>
+                <li><a href="http://linkedin.com/in/lucas-firmino-425a491b3" title="Link acessar o perfil no Linkedin do Lucas" target="_blank" ><img src="../Linkedin-icon.png" alt="icone do Linkedin" class="icon" ></a></li>
+                <br>
+                <li><a href="mailto:lucasfcaje13@gmail.com" title="Email de Lucas" target="_blank">
+                <img src="../email-icon.png" alt="Icone de email" class="icon" ></a>
+
+            </div>
+        
+        <button onclick="back_menu()" class="botao">Tela inicial</button>
+
+    </div>
+
+</section>
+</main>
+<script src="script_show.js"></script>
+<script src="script_quiz.js"></script>
+
+
+</body>
+
+</html>
